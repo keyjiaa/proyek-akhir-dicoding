@@ -1,0 +1,162 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Afacad Flux", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    font-variation-settings: "slnt" 0;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #E1F2FB;
+    color: #000;
+    padding: 20px;
+    text-align: center;
+}
+
+header nav {
+    display: flex;
+    gap: 2rem;
+    background-color: #F1F9F9;
+    padding: 16px;
+    position: sticky;
+    top: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+nav li {
+    display: flex;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+nav a {
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+main {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    gap: 20px;
+}
+
+.content {
+    flex: 5;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    gap: 1rem 2rem;
+}
+
+article {
+    padding: 15px;
+    border-radius: 5px;
+    width: 30%;
+}
+
+aside {
+    flex: 1;
+    padding: 15px;
+    background-color: #F3DFE3;
+    box-shadow: 0 4px 8px 0; 
+    margin: 20px 0;
+    border-radius: 5px;
+    border: 1px solid black; 
+    max-width: 600px;
+    
+}
+
+aside header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+aside header h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+aside header figure img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+aside section {
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+aside section p {
+    margin: 0;
+}
+
+aside header h2,
+aside section p {
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: #f5b9c4;
+    color: #000;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+img {
+    min-width: 300px;
+    max-width: 600px;
+    border-radius: 5px;
+}
+
+.box {
+    flex: 1;
+    align-self: center;
+    width: 90%;
+    padding: 23px;
+    font-size: 1.1em;
+    margin: 10px 0;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgb(244, 150, 208);
+}
+
+@media screen and (max-width: 1200px) {
+    main {
+        flex-flow: column nowrap;
+    }
+
+    main aside {
+        align-self: center;
+    }  
+}
+
+@media screen and (max-width: 768px) {
+    nav ul {
+        justify-content: center;
+    }
+
+    main aside {
+        align-self: stretch;
+    }
+}
